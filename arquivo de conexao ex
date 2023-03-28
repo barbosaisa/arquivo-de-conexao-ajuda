@@ -1,0 +1,12 @@
+<?php  
+
+$host="nome de onde vindo  "
+$db="nome do banco de dados "
+$user="nome de usuario por exemplo isaroot"
+$senha="se o banco de dados ter senha por senha exemplo a minha do php é isabella0223"
+
+$conexao=@msqli_coneect (o msq é uma palavra reservada para conexao) 
+($host,$db,@user,@senha) (aqui eu passei os valores la de cima )
+or die ("erro na conexao") ( aqui È a mensagem que vai aparecer se por algum motivo meu banco de dados nao rodar )
+mysqli_set_charset(@conexao,"ut8"); ( aqui eu fecho o bsnco e coloco o leitor de caracteres)
+?>
